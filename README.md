@@ -49,6 +49,8 @@ A Next.js application that processes computational jobs asynchronously using a q
 - ✅ Queue/task manager (Trigger.dev)
 - ✅ MongoDB database support
 - ✅ Clean, modern UI design
+- ✅ Deploy on Railway
+- ✅ Deploy application to public URL
 
 ### ⏳ Pending Requirements
 
@@ -56,8 +58,6 @@ A Next.js application that processes computational jobs asynchronously using a q
 
 - ⏳ Monorepo setup with Turbo
 - ⏳ tRPC integration (Zod schemas implemented, but not tRPC)
-- ⏳ Deploy application to public URL
-- ⏳ Deploy on Railway
 - ⏳ CI/CD pipeline using GitHub Actions
 - ⏳ OAuth login with Microsoft Entra ID
 - ⏳ Redis caching
@@ -124,12 +124,12 @@ A Next.js application that processes computational jobs asynchronously using a q
 
 ### Environment Variables
 
-| Variable             | Required | Purpose                                                               |
-| -------------------- | -------- | --------------------------------------------------------------------- |
-| `DATABASE_URL`       | Yes      | SQLite database path                                                      |
-| `TRIGGER_SECRET_KEY` | Yes      | Trigger.dev secret key (get from Trigger.dev dashboard)                  |
-| `MONGODB_URI`        | No       | MongoDB connection string (if set, uses MongoDB instead of SQLite)        |
-| `GROQ_API_KEY`       | Optional | Groq API key for LLM-powered computation                                  |
+| Variable             | Required | Purpose                                                            |
+| -------------------- | -------- | ------------------------------------------------------------------ |
+| `DATABASE_URL`       | Yes      | SQLite database path                                               |
+| `TRIGGER_SECRET_KEY` | Yes      | Trigger.dev secret key (get from Trigger.dev dashboard)            |
+| `MONGODB_URI`        | No       | MongoDB connection string (if set, uses MongoDB instead of SQLite) |
+| `GROQ_API_KEY`       | Optional | Groq API key for LLM-powered computation                           |
 
 ### Deployment Steps
 
